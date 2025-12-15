@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/First-Adi/',   // EXACT GitHub repo name
+  base: '/First-Adi/',   // <-- EXACT github repo name
+  build: {
+    outDir: 'dist',
+  }
 })
